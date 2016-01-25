@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsletter form</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="all,follow" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/js/default.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h1>Newsletter</h1>
+				<br />
+				<form action="/api/newsletter/" method="POST">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>*** Email</label>
+								<div><input type="text" name="email" value="@" maxlength="200" class="form-control" /></div>
+							</div>
+						</div>
+						<code id="response" class="col-md-12"></code>
+						<div class="clearfix">&nbsp;</div>
+						<div class="col-md-12">
+							<button type="submit" name="submit" class="btn btn-default btn-lg">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
